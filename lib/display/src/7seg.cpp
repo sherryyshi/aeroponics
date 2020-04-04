@@ -1,5 +1,5 @@
-#include "7seg.h"
 #include <Arduino.h>
+#include "7seg.h"
 
 const int _0[] = {0, 1, 2, 3, 4, 5, -1};
 const int _1[] = {1, 2, -1};
@@ -14,7 +14,7 @@ const int _9[] = {0, 1, 2, 3, 5, 6, -1};
 
 const int *digits[] = {_0, _1, _2, _3, _4, _5, _6, _7, _8, _9};
 
-void display_digit(const digit_display display, int number)
+void display_digit(const digit_display display, unsigned int number)
 {
     int i = 0;
     const int *d = digits[number];

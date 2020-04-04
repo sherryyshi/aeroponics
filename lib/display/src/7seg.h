@@ -67,6 +67,6 @@ const digit_display D = {
     { PIN5, PIN7 },
 };
 
-void display_digit(const digit_display display, int number);
+void display_digit(const digit_display display, unsigned int number);
 
 #endif
